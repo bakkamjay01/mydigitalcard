@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+:root {
+  --dark-bg: #0a0a0a;
+  --darker-bg: #050505;
+  --accent: #2ecc71;
+  --accent-glow: rgba(46, 204, 113, 0.4);
+  --text: #ffffff;
+}
+
+body {
+  background: var(--dark-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.digital-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px var(--accent-glow);
+  transition: 0.3s ease;
+}
+
+.digital-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px var(--accent);
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  object-fit: cover;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  background: linear-gradient(45deg, var(--accent), #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.role {
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.contact-info i {
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.social-links {
+  margin-top: 1.3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: var(--text);
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.qr-btn {
+  margin-top: 1.8rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  background: var(--accent);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.qr-btn:hover {
+  background: #27ae60;
+}
+
+.qr-box {
+  margin-top: 1.5rem;
+  display: none;
+}
+
+.qr-box img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
